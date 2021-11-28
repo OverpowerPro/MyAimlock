@@ -1,0 +1,44 @@
+--by  OverPower ON  Yt
+local FirstDesgin = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local FirstButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+FirstDesgin.Name = "FirstDesgin"
+FirstDesgin.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = FirstDesgin
+MainFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+MainFrame.Position = UDim2.new(0.124422804, 0, 0.313385814, 0)
+MainFrame.Size = UDim2.new(0, 533, 0, 312)
+MainFrame.Active = true
+MainFrame.Draggable = true
+MainFrame.Visible = false
+
+FirstButton.Name = "FirstButton"
+FirstButton.Parent = FirstDesgin
+FirstButton.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+FirstButton.BorderColor3 = Color3.fromRGB(221, 212, 200)
+FirstButton.Position = UDim2.new(0.13961269, 0, 0.37637797, 0)
+FirstButton.Size = UDim2.new(0, 152, 0, 44)
+FirstButton.Font = Enum.Font.SourceSans
+FirstButton.Text = "Aimlock"
+FirstButton.TextColor3 = Color3.fromRGB(162, 162, 162)
+FirstButton.TextSize = 14.000
+FirstButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/OverpowerPro/Aimlock/main/epik"))()
+end)
+
+TextLabel.Parent = FirstDesgin
+TextLabel.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+TextLabel.Position = UDim2.new(0.124422796, 0, 0.313385844, 0)
+TextLabel.Size = UDim2.new(0, 532, 0, 31)
+TextLabel.Font = Enum.Font.Roboto
+TextLabel.LineHeight = 0.620
+TextLabel.Text = "Op's Aimlock, https://discord.gg/xCPkF86fRm\\n"
+TextLabel.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(172, 172, 172)
