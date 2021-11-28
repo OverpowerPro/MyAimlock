@@ -1,4 +1,4 @@
---by  OverPower ON  Yt
+-- By Al3ntel ON YT
 local FirstDesgin = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local FirstButton = Instance.new("TextButton")
@@ -11,12 +11,13 @@ FirstDesgin.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = FirstDesgin
+MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 MainFrame.Position = UDim2.new(0.124422804, 0, 0.313385814, 0)
 MainFrame.Size = UDim2.new(0, 533, 0, 312)
 MainFrame.Active = true
-MainFrame.Draggable = true
 MainFrame.Visible = false
+MainFrame.Draggable = true
 
 FirstButton.Name = "FirstButton"
 FirstButton.Parent = FirstDesgin
