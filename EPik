@@ -1,2 +1,344 @@
-Down
-https://discord.gg/xCPkF86fRm
+-- By Al3ntel (OverPower) https://discord.gg/xCPkF86fRm
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local misc = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local NoClip = Instance.new("TextButton")
+local Anti_Stomp = Instance.new("TextButton")
+local FistReach = Instance.new("TextButton")
+local AutoFarm = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local SilentAim = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ClickTpq = Instance.new("TextButton")
+local SpeedHack = Instance.new("TextButton")
+local Flyx = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Main_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local WaterMark = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Discord = Instance.new("TextLabel")
+local Note = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MainFrame.Position = UDim2.new(0.220436275, 0, 0.324409485, 0)
+MainFrame.Size = UDim2.new(0, 417, 0, 235)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+misc.Name = "misc"
+misc.Parent = MainFrame
+misc.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+misc.BorderColor3 = Color3.fromRGB(25, 25, 25)
+misc.Position = UDim2.new(0, 0, 0.187234044, 0)
+misc.Size = UDim2.new(0, 417, 0, 156)
+
+UICorner.Parent = misc
+
+NoClip.Name = "NoClip"
+NoClip.Parent = misc
+NoClip.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+NoClip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.Position = UDim2.new(0.575539589, 0, 0.673882365, 0)
+NoClip.Size = UDim2.new(0, 166, 0, 32)
+NoClip.Font = Enum.Font.SourceSans
+NoClip.Text = "NoClip"
+NoClip.TextColor3 = Color3.fromRGB(123, 34, 152)
+NoClip.TextSize = 42.000
+NoClip.MouseButton1Down:connect(function()
+
+	local noclipplayer = game:GetService("Players").LocalPlayer
+	local noclipmouse = noclipplayer:GetMouse()
+
+	local donoclip = false
+	local noclip = false
+
+	function b_noclip(key)
+		if (key == "b") then
+			if noclip == false then
+				donoclip = true
+
+				noclip = true
+			elseif noclip == true then
+				donoclip = false
+
+				noclip = false
+			end
+		end
+	end
+
+	noclipmouse.KeyDown:connect(b_noclip)
+
+	game:GetService("Players").LocalPlayer.Character.Head.Touched:connect(function(obj)
+		if obj ~= workspace.Terrain then
+			if donoclip == true then
+				obj.CanCollide = false
+			else
+				obj.CanCollide = true
+			end
+		end
+	end)
+end)
+
+
+Anti_Stomp.Name = "Anti_Stomp"
+Anti_Stomp.Parent = misc
+Anti_Stomp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Anti_Stomp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Anti_Stomp.Position = UDim2.new(0.0167865716, 0, 0.036649216, 0)
+Anti_Stomp.Size = UDim2.new(0, 166, 0, 32)
+Anti_Stomp.Font = Enum.Font.SourceSans
+Anti_Stomp.Text = "Anti_Stomp"
+Anti_Stomp.TextColor3 = Color3.fromRGB(123, 34, 152)
+Anti_Stomp.TextSize = 42.000
+Anti_Stomp.MouseButton1Down:connect(function()
+	pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep("rrrrrrrrrrr",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) loadstring(game:HttpGet("https://pastebin.com/raw/MQ3wc7Zq", true))() end end)
+end)
+
+FistReach.Name = "FistReach"
+FistReach.Parent = misc
+FistReach.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FistReach.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FistReach.Position = UDim2.new(0.565947235, 0, 0.036649216, 0)
+FistReach.Size = UDim2.new(0, 166, 0, 32)
+FistReach.Font = Enum.Font.SourceSans
+FistReach.Text = "FistReach"
+FistReach.TextColor3 = Color3.fromRGB(123, 34, 152)
+FistReach.TextSize = 42.000
+FistReach.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/aZHK690D'))()
+end)
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = misc
+AutoFarm.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoFarm.Position = UDim2.new(0.0167865716, 0, 0.673882365, 0)
+AutoFarm.Size = UDim2.new(0, 166, 0, 32)
+AutoFarm.Font = Enum.Font.SourceSans
+AutoFarm.Text = "AutoFarm"
+AutoFarm.TextColor3 = Color3.fromRGB(123, 34, 152)
+AutoFarm.TextSize = 42.000
+AutoFarm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/3L5CTn8J'))() 
+end)
+
+TextButton.Parent = misc
+TextButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.258992821, 0, 0.397435904, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 31)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Animations"
+TextButton.TextColor3 = Color3.fromRGB(123, 34, 152)
+TextButton.TextSize = 29.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
+end)
+
+Main.Name = "Main"
+Main.Parent = MainFrame
+Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Main.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Main.Position = UDim2.new(0, 0, 0.187234044, 0)
+Main.Size = UDim2.new(0, 417, 0, 156)
+Main.Visible = false
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = Main
+SilentAim.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SilentAim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SilentAim.Position = UDim2.new(0.0167865716, 0, 0.036649216, 0)
+SilentAim.Size = UDim2.new(0, 166, 0, 32)
+SilentAim.Font = Enum.Font.SourceSans
+SilentAim.Text = "SilentAim"
+SilentAim.TextColor3 = Color3.fromRGB(123, 34, 152)
+SilentAim.TextSize = 42.000
+SilentAim.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ciHDtfSj"))()
+end)
+
+UICorner_2.Parent = Main
+
+ClickTpq.Name = "ClickTp(q)"
+ClickTpq.Parent = Main
+ClickTpq.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ClickTpq.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClickTpq.Position = UDim2.new(0.0167865716, 0, 0.616190076, 0)
+ClickTpq.Size = UDim2.new(0, 166, 0, 32)
+ClickTpq.Font = Enum.Font.SourceSans
+ClickTpq.Text = "ClickTp(q)"
+ClickTpq.TextColor3 = Color3.fromRGB(123, 34, 152)
+ClickTpq.TextSize = 42.000
+ClickTpq.MouseButton1Down:connect(function()
+	plr = game.Players.LocalPlayer
+
+	hum = plr.Character.HumanoidRootPart
+
+	mouse = plr:GetMouse()
+
+
+
+	mouse.KeyDown:connect(function(key)
+
+		if key == "q" then
+
+			if mouse.Target then
+
+				hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+			end
+
+		end
+	end)
+end)
+
+
+SpeedHack.Name = "SpeedHack"
+SpeedHack.Parent = Main
+SpeedHack.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SpeedHack.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedHack.Position = UDim2.new(0.565947235, 0, 0.616190076, 0)
+SpeedHack.Size = UDim2.new(0, 166, 0, 32)
+SpeedHack.Font = Enum.Font.SourceSans
+SpeedHack.Text = "SpeedHack"
+SpeedHack.TextColor3 = Color3.fromRGB(123, 34, 152)
+SpeedHack.TextSize = 42.000
+SpeedHack.MouseButton1Down:connect(function()
+	local lp = game:GetService"Players".LocalPlayer
+	local SuperSpeed = Instance.new("IntValue",lp.Character.BodyEffects.Movement);SuperSpeed.Name = "SuperSpeed"
+	local HulkJump = Instance.new("IntValue",lp.Character.BodyEffects.Movement);HulkJump.Name = "HulkJump"
+end)
+
+Flyx.Name = "Fly(x)"
+Flyx.Parent = Main
+Flyx.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Flyx.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Flyx.Position = UDim2.new(0.565947235, 0, 0.036649216, 0)
+Flyx.Size = UDim2.new(0, 166, 0, 32)
+Flyx.Font = Enum.Font.SourceSans
+Flyx.Text = "Fly(x)"
+Flyx.TextColor3 = Color3.fromRGB(123, 34, 152)
+Flyx.TextSize = 42.000
+Flyx.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/6R4hQFhW"))()
+end)
+
+UICorner_3.Parent = MainFrame
+
+Main_2.Name = "Main"
+Main_2.Parent = MainFrame
+Main_2.BackgroundColor3 = Color3.fromRGB(249, 249, 249)
+Main_2.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Main_2.Position = UDim2.new(-0.000300135463, 0, -0.00425533019, 0)
+Main_2.Size = UDim2.new(0, 57, 0, 42)
+Main_2.Font = Enum.Font.SourceSans
+Main_2.Text = "Main"
+Main_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.TextSize = 25.000
+
+UICorner_4.Parent = Main_2
+
+Misc.Name = "Misc"
+Misc.Parent = MainFrame
+Misc.BackgroundColor3 = Color3.fromRGB(249, 249, 249)
+Misc.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Misc.Position = UDim2.new(0.862863362, 0, 0.00144075602, 0)
+Misc.Size = UDim2.new(0, 57, 0, 42)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(0, 0, 0)
+Misc.TextSize = 25.000
+
+UICorner_5.Parent = Misc
+
+WaterMark.Name = "WaterMark"
+WaterMark.Parent = MainFrame
+WaterMark.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+WaterMark.BorderColor3 = Color3.fromRGB(25, 25, 25)
+WaterMark.Position = UDim2.new(0.258109033, 0, -0.00325012207, 0)
+WaterMark.Size = UDim2.new(0, 200, 0, 44)
+WaterMark.Font = Enum.Font.SourceSans
+WaterMark.Text = "!AnimeWare!"
+WaterMark.TextColor3 = Color3.fromRGB(50, 80, 186)
+WaterMark.TextSize = 43.000
+
+UICorner_6.Parent = WaterMark
+
+Discord.Name = "Discord"
+Discord.Parent = MainFrame
+Discord.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Discord.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Discord.Position = UDim2.new(0.117505997, 0, 0.808510661, 0)
+Discord.Size = UDim2.new(0, 395, 0, 0)
+Discord.Font = Enum.Font.SourceSans
+Discord.Text = "https://discord.gg/xCPkF86fRm\\n"
+Discord.TextColor3 = Color3.fromRGB(50, 80, 186)
+Discord.TextSize = 28.000
+
+Note.Name = "Note"
+Note.Parent = MainFrame
+Note.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Note.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Note.Position = UDim2.new(0.280575544, 0, 0.922201216, 0)
+Note.Size = UDim2.new(0, 191, 0, 19)
+Note.Font = Enum.Font.SourceSans
+Note.Text = "Toggle K And L to Open/Close"
+Note.TextColor3 = Color3.fromRGB(50, 80, 186)
+Note.TextSize = 14.000
+
+-- Scripts:
+
+local function ZJJL_fake_script() -- MainAss.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local Plr = game.Players.LocalPlayer
+
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "k" then
+			script.Parent.Visible = true
+		end
+	end)
+
+	local Plr = game.Players.LocalPlayer
+
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "l" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ZJJL_fake_script)()
+local function TNKVLKS_fake_script() -- Main_2.LocalScript 
+	local script = Instance.new('LocalScript', Main_2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Main.Visible = true
+		script.Parent.Parent.misc.Visible = false
+		wait(0.1)
+	end)	
+	
+end
+coroutine.wrap(TNKVLKS_fake_script)()
+local function HSDYG_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.misc.Visible = true
+		wait(0.1)
+	end)	
+	
+end
+coroutine.wrap(HSDYG_fake_script)()
